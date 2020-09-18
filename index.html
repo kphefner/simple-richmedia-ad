@@ -13,122 +13,122 @@
   <body>
     <h2>Hello World</h2>
     <div id="kh_richmedia3">
-	    <style type="text/css">
-		    #kh_richmedia3 {
-			    max-width:300px;
-			    margin: 0 auto;
-			    font-size: 16px;
-		    }
-		    #kh_richmedia3 .kh-blockimg {
-			     width:100%;
-			     height:50px;
-			     display: block;
-		    }
-		    #kh_ad_content {
-			    position:relative;
-			    max-width:300px;
-			    text-align: center;
-			    margin-top:.5rem;
-		    }
-		    #kh_ad_carousel {
-			    position:relative;
-			    height:210px;
-		    }
-		    #kh_richmedia3 .kh-closebtn {
-					position:absolute;
-					top:0px;
-					right:5px;
-					z-index:2;
-					cursor:pointer;
-				}
-		    @keyframes cfFadeInOut {
-				  0% {
-				    opacity:1;
-				  }
-				  17% {
-				    opacity:1;
-				  }
-				  25% {
-				    opacity:0;
-				  }
-				  92% {
-				    opacity:0;
-				  }
-				  100% {
-				    opacity:1;
-				  }
-				}
-		    #kh_richmedia3 .imgwrap {
-			    position:absolute;
-			    top:0;
-			    left:15px;
-			    background: white;
-			    animation-name: cfFadeInOut;
-					animation-timing-function: ease-in-out;
-					animation-iteration-count: infinite;
-					animation-duration:16s;
-		    }
-		    #kh_richmedia3 #kh_ad_carousel .imgwrap:nth-of-type(1) {
-					animation-delay:12s
-				}
-				#kh_richmedia3 #kh_ad_carousel .imgwrap:nth-of-type(2) {
-					animation-delay:8s
-				}
-				#kh_richmedia3 #kh_ad_carousel .imgwrap:nth-of-type(3) {
-					animation-delay:4s
-				}
-				#kh_richmedia3 #kh_ad_carousel .imgwrap:nth-of-type(4) {
-					animation-delay:0s
-				}
-		    #kh_richmedia3 .imgwrap img {
-			    width:100%;
-			    display:block;
-		    }
-		    #kh_richmedia3 #kh_call_to_action {
-			    margin-top:1rem;
-			  }
-		  </style>
-	    <div class="kh-initial-view">		
-				<a href="#" id="kh_expand1" class="ads" onclick="window.kh_rm.expand(event);return false;">		
-					<img class="kh-banner kh-blockimg" src="http://a.aug.me/augmeimg/26000/25265.gif" alt="Click for more information" />
-				</a>	
-			</div><!-- end initial view content -->		
-			<div id="kh_ad_content" style="display:none;">
-				<div class="kh-closebtn" id="kh_closebtn" onclick="window.kh_rm.collapse(event);return false;">
-					<img src="http://a.aug.me/augmeimg/26000/25246.png" alt="Close Ad" />
-				</div>
-				<div id="kh_ad_carousel">
-					<div class="imgwrap"><img class="imgs" src="http://a.aug.me/augmeimg/26000/25271.png" alt="24 by 7 Service" /></div>
-					<div class="imgwrap"><img class="imgs" src="http://a.aug.me/augmeimg/26000/25267.png" alt="Auto Jump Starts" /></div>
-					<div class="imgwrap"><img class="imgs" src="http://a.aug.me/augmeimg/26000/25268.png" alt="Installations" /></div>
-					<div class="imgwrap"><img class="imgs" src="http://a.aug.me/augmeimg/26000/25269.png" alt="Powered By Interstate Batteries" /></div>
-				</div>
-				<div id="kh_call_to_action">
-					<a class="kh_click" href="http://InterstateBatteriesSavetoContacts.g.aug.me" target="_blank">
-						<img class="kh_blockimg" src="http://a.aug.me/augmeimg/26000/25244.png"  border="0" alt="Contact Interstate Batteries" />
-					</a>
-				</div>
-			</div><!-- end KH Ad Content -->
-			<script type="text/javascript">
-				(($) => {
-				  const elem = document.querySelector('#kh_ad_content');
-				  const kh_rm = {
-					  expand: function(e) {
-						  if (!e) { e = window.event; }
-							e.cancelBubble = true;
-							if (e.stopPropagation) e.stopPropagation();
-							elem.style.display = 'block';
-						},
-						collapse: function(e) {
-							if (!e) { e = window.event; }
-							e.cancelBubble = true;
-							if (e.stopPropagation) e.stopPropagation();
-							elem.style.display = 'none';
-						}
-				  }
-				  $.kh_rm = kh_rm;
-				})(window,document);
-			</script>
+      <style type="text/css">
+        #kh_richmedia3 {
+          max-width:300px;
+          margin: 0 auto;
+          font-size: 16px;
+        }
+        #kh_richmedia3 .kh-blockimg {
+           width:100%;
+           height:50px;
+           display: block;
+        }
+        #kh_ad_content {
+          position:relative;
+          max-width:300px;
+          text-align: center;
+          margin-top:.5rem;
+        }
+        #kh_ad_carousel {
+          position:relative;
+          height:210px;
+        }
+        #kh_richmedia3 .kh-closebtn {
+          position:absolute;
+          top:0px;
+          right:5px;
+          z-index:2;
+          cursor:pointer;
+        }
+        @keyframes cfFadeInOut {
+          0% {
+            opacity:1;
+          }
+          17% {
+            opacity:1;
+          }
+          25% {
+            opacity:0;
+          }
+          92% {
+            opacity:0;
+          }
+          100% {
+            opacity:1;
+          }
+        }
+        #kh_richmedia3 .imgwrap {
+          position:absolute;
+          top:0;
+          left:15px;
+          background: white;
+          animation-name: cfFadeInOut;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-duration:16s;
+        }
+        #kh_richmedia3 #kh_ad_carousel .imgwrap:nth-of-type(1) {
+          animation-delay:12s
+        }
+        #kh_richmedia3 #kh_ad_carousel .imgwrap:nth-of-type(2) {
+          animation-delay:8s
+        }
+        #kh_richmedia3 #kh_ad_carousel .imgwrap:nth-of-type(3) {
+          animation-delay:4s
+        }
+        #kh_richmedia3 #kh_ad_carousel .imgwrap:nth-of-type(4) {
+          animation-delay:0s
+        }
+        #kh_richmedia3 .imgwrap img {
+          width:100%;
+          display:block;
+        }
+        #kh_richmedia3 #kh_call_to_action {
+          margin-top:1rem;
+        }
+      </style>
+      <div class="kh-initial-view">    
+        <a href="#" id="kh_expand1" class="ads" onclick="window.kh_rm.expand(event);return false;">    
+          <img class="kh-banner kh-blockimg" src="http://a.aug.me/augmeimg/26000/25265.gif" alt="Click for more information" />
+        </a>  
+      </div><!-- end initial view content -->    
+      <div id="kh_ad_content" style="display:none;">
+        <div class="kh-closebtn" id="kh_closebtn" onclick="window.kh_rm.collapse(event);return false;">
+          <img src="http://a.aug.me/augmeimg/26000/25246.png" alt="Close Ad" />
+        </div>
+        <div id="kh_ad_carousel">
+          <div class="imgwrap"><img class="imgs" src="http://a.aug.me/augmeimg/26000/25271.png" alt="24 by 7 Service" /></div>
+          <div class="imgwrap"><img class="imgs" src="http://a.aug.me/augmeimg/26000/25267.png" alt="Auto Jump Starts" /></div>
+          <div class="imgwrap"><img class="imgs" src="http://a.aug.me/augmeimg/26000/25268.png" alt="Installations" /></div>
+          <div class="imgwrap"><img class="imgs" src="http://a.aug.me/augmeimg/26000/25269.png" alt="Powered By Interstate Batteries" /></div>
+        </div>
+        <div id="kh_call_to_action">
+          <a class="kh_click" href="http://InterstateBatteriesSavetoContacts.g.aug.me" target="_blank">
+            <img class="kh_blockimg" src="http://a.aug.me/augmeimg/26000/25244.png"  border="0" alt="Contact Interstate Batteries" />
+          </a>
+        </div>
+      </div><!-- end KH Ad Content -->
+      <script type="text/javascript">
+        (($) => {
+          const elem = document.querySelector('#kh_ad_content');
+          const kh_rm = {
+            expand: function(e) {
+              if (!e) { e = window.event; }
+              e.cancelBubble = true;
+              if (e.stopPropagation) e.stopPropagation();
+              elem.style.display = 'block';
+            },
+            collapse: function(e) {
+              if (!e) { e = window.event; }
+              e.cancelBubble = true;
+              if (e.stopPropagation) e.stopPropagation();
+              elem.style.display = 'none';
+            }
+          }
+          $.kh_rm = kh_rm;
+        })(window,document);
+      </script>
     </div><!-- end KH Ad -->
   </body>
 </html>
